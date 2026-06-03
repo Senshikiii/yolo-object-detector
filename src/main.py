@@ -13,3 +13,8 @@ results = model.train(
 )
 
 
+results = model.val()
+
+results = model("imgpath.jpg")
+
+
