@@ -13,7 +13,7 @@ app = FastAPI()
 
 model = YOLO("../runs/detect/train-5/weights/best.pt")
 
-OUTPUT_PATH = "static_prediction.jpg"
+OUTPUT_PATH = "static_prediction_dir/,i_feel_stpuid.jpg" # i only made a dir instead of an img path thingy? not sure if it'll work but yeah wtv
 
 @app.post("/upload_image")
 async def receive_and_process(file: UploadFile = File(...)): # an ellipsis is smth like a condition where a file or anything is strictly needed
